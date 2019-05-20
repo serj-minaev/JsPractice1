@@ -45,8 +45,18 @@ document.getElementById('name').value = mainList.ShopName;
 document.getElementById('budget').value = mainList.Money;
 document.getElementById('budget2').value = mainList.Money / 30;
 
-shopGoods[0] = document.getElementById('goods1').value;
+// mainList.shopGoods[0] = document.getElementById('goods1').value;
 
+mainList.shopGoods = [1, 3, 18, 'hello'];
 
 
 console.log(mainList);
+
+let cifra = 33721;
+
+let divNum = document.querySelector('.num');
+
+if(divNum){
+    divNum.innerHTML = cifra;
+}
+
