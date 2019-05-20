@@ -14,7 +14,6 @@ let Axe = {
 
 
 // Start practice
-let mainList;
 mainList = {
     Money: '',
     ShopName: '',
@@ -22,25 +21,28 @@ mainList = {
     employers: '',
     open: true
 };
+//
+// let country = {
+//
+//     name: "Швейцария",
+//     languages: ["немецкий", "французский", "итальянский"],
+//     capital:{
+//
+//         name: "Берн",
+//         population: 126598
+//     },
+//     cities: [
+//         { name: "Цюрих", population: 378884},
+//         { name: "Женева", population: 188634},
+//         { name: "Базель", population: 164937}
+//     ]
+// };
 
-let country = {
+mainList.Money = prompt("Ваш бюджет?", '100');
+mainList.ShopName = prompt("Название вашего магазина?", 'Маргаритка');
 
-    name: "Швейцария",
-    languages: ["немецкий", "французский", "итальянский"],
-    capital:{
+document.getElementById('name').value = mainList.ShopName;
+document.getElementById('budget').value = mainList.Money;
+document.getElementById('budget2').value = mainList.Money / 30;
 
-        name: "Берн",
-        population: 126598
-    },
-    cities: [
-        { name: "Цюрих", population: 378884},
-        { name: "Женева", population: 188634},
-        { name: "Базель", population: 164937}
-    ]
-};
-
-Money = prompt("Ваш бюджет?", '100');
-ShopName = prompt("Название вашего магазина?", 'Маргаритка');
-
-
-console.log(country);
+console.log(mainList);
