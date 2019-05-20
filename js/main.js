@@ -45,4 +45,8 @@ document.getElementById('name').value = mainList.ShopName;
 document.getElementById('budget').value = mainList.Money;
 document.getElementById('budget2').value = mainList.Money / 30;
 
+shopGoods[0] = document.getElementById('goods1').value;
+
+
+
 console.log(mainList);
