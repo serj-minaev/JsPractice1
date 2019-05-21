@@ -1,12 +1,12 @@
-let text = 'Hello World!';
-
-let root = document.getElementById('root');
-
-let Axe = {
-    race: 'Orc', 
-    cl: 'Warrior',
-    color: 'red'
-};
+// let text = 'Hello World!';
+//
+// let root = document.getElementById('root');
+//
+// let Axe = {
+//     race: 'Orc',
+//     cl: 'Warrior',
+//     color: 'red'
+// };
 
 
 
@@ -21,25 +21,9 @@ mainList = {
     employers: '',
     open: true
 };
-//
-// let country = {
-//
-//     name: "Швейцария",
-//     languages: ["немецкий", "французский", "итальянский"],
-//     capital:{
-//
-//         name: "Берн",
-//         population: 126598
-//     },
-//     cities: [
-//         { name: "Цюрих", population: 378884},
-//         { name: "Женева", population: 188634},
-//         { name: "Базель", population: 164937}
-//     ]
-// };
 
-mainList.Money = prompt("Ваш бюджет?", '100');
-mainList.ShopName = prompt("Название вашего магазина?", 'Маргаритка');
+// mainList.Money = prompt("Ваш бюджет?", '100');
+// mainList.ShopName = prompt("Название вашего магазина?", 'Маргаритка');
 
 document.getElementById('name').value = mainList.ShopName;
 document.getElementById('budget').value = mainList.Money;
@@ -57,6 +41,20 @@ let cifra = 33721;
 let divNum = document.querySelector('.num');
 
 if(divNum){
-    divNum.innerHTML = cifra;
+    divNum.innerHTML = cifra.toString();
 }
 
+
+let NumUmn = document.querySelector('.num-umn');
+
+if(NumUmn) {
+    cifra = cifra.toString();
+    unmojenie = cifra[0] * cifra[1] * cifra[2] * cifra[3] * cifra[4];
+    NumUmn.innerHTML = unmojenie;
+}
+
+let mathpow = document.querySelector('.mathpow');
+
+if(mathpow){
+    mathpow.innerHTML = Math.pow(unmojenie,3)//;
+}

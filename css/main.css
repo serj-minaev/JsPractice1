@@ -22,3 +22,6 @@
     cursor: not-allowed;
 }
 
+.num, .num-umn, .mathpow{
+    text-align: center;
+}
