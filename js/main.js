@@ -22,19 +22,40 @@ mainList = {
     open: true
 };
 
-// mainList.Money = prompt("Ваш бюджет?", '100');
-// mainList.ShopName = prompt("Название вашего магазина?", 'Маргаритка');
+mainList.Money = prompt("Ваш бюджет?", '100');
+mainList.ShopName = prompt("Название вашего магазина?", 'Маргаритка');
 
-document.getElementById('name').value = mainList.ShopName;
-document.getElementById('budget').value = mainList.Money;
-document.getElementById('budget2').value = mainList.Money / 30;
+document.querySelector('#name').value = mainList.ShopName;
+document.querySelector('#budget').value = mainList.Money;
+document.querySelector('#budget2').value = mainList.Money / 30;
 
 // mainList.shopGoods[0] = document.getElementById('goods1').value;
 
-mainList.shopGoods = [1, 3, 18, 'hello'];
+// mainList.shopGoods = [1, 3, 18, 'hello'];
+
+let goods = document.querySelectorAll('.goods input');
+let employer = document.querySelectorAll('.employer input');
+// console.log('goods', goods);
 
 
-console.log(mainList);
+button1.onclick = function() {
+    // let goods1 = document.querySelector('#goods1');
+    if(goods){
+        goods.forEach(item=>{
+            mainList.shopGoods.push( item.value);
+        });
+    if (employer) {
+        employer.forEach(item=>{
+            mainList.shopGoods.push(item.value);
+        })
+    }
+    console.log(mainList);
+    
+        // mainList.shopGoods =  [goods1.value];
+
+    }
+};
+
 
 let cifra = 33721;
 
